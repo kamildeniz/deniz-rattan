@@ -322,7 +322,31 @@
   "carts": [
     {
       
+        "id": 227,
+        "name": "Nobis",
+        "price": 195,
+        "categoryId": 1,
+        "rate": 1.68,
+        "content": "Reprehenderit iste quos amet. Natus consequatur in",
+        "stock": 30,
+        "quantity": 23,
+        "inventoryStatus": "INSTOCK",
+        "imageUrl": "https://dummyimage.com/974x504"
+        
+    },
+    {
+      "id": 315,
+      "name": "Quibusdam",
+      "price": 209,
+      "categoryId": 4,
+      "rate": 0.21,
+      "content": "Assumenda debitis voluptatem magnam temporibus mol",
+      "stock": 125,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFeI8yqtKfZMWg8_Zbf-RENKCV37eZ3AvUEQ&usqp=CAU",
+			"quantity": 24,
+			"inventoryStatus": "INSTOCK"
     }
+    
   ],
   "users": [
     {

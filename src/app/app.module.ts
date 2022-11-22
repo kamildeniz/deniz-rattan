@@ -8,6 +8,8 @@ import{DropdownModule} from 'primeng/dropdown'
 import {MenubarModule} from 'primeng/menubar'
 import {ImageModule} from 'primeng/image'
 import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
+import{ SplitButtonModule } from 'primeng/splitbutton';
+import {BadgeModule} from 'primeng/badge'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,18 +21,22 @@ import { InputTextModule } from 'primeng/inputtext';
 import {FormsModule} from '@angular/forms';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
     NaviComponent,
-    FooterComponent
+    FooterComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
+    BadgeModule,
     RatingModule,
     MdbCheckboxModule,
+    SplitButtonModule,
     ImageModule,
     DropdownModule,
     MenubarModule,

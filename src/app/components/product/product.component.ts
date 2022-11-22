@@ -15,18 +15,7 @@ import { ChangeDetectorRef } from '@angular/core';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-  products: Product[] = [{
-    "id": 201,
-    "name": "Nulla",
-    "price": 207,
-    "categoryId": 3,
-    "rate": 2.44,
-    "content": "Culpa sed tenetur incidunt quia veniam sed molliti",
-    "stock": 78,
-    "quantity": 2,
-    "inventoryStatus": "LOWSTOCK",
-    "imageUrl": "https://dummyimage.com/400x350.png"
-  }];
+  products: Product[] = [];
   sortOptions: SelectItem[] = [];
   categories: Category[] = [{ id: 0, name: "yok" }];
   sortOrder: number = 0;
