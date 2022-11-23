@@ -9,7 +9,7 @@
       "content": "Culpa sed tenetur incidunt quia veniam sed mollitiCulpa sed tenetur incidunt quia veniam sed mollitiCulpa sed tenetur incidunt quia veniam sed molliti",
       "stock": 78,
       "quantity": 2,
-			"inventoryStatus": "LOWSTOCK",
+      "inventoryStatus": "LOWSTOCK",
       "imageUrl": "https://dummyimage.com/400x350.png"
     },
     {
@@ -20,7 +20,7 @@
       "rate": 2.18,
       "content": "Nam incidunt blanditiis odio inventore. Nobis volu",
       "quantity": 0,
-			"inventoryStatus": "OUTOFSTOCK",
+      "inventoryStatus": "OUTOFSTOCK",
       "stock": 67,
       "imageUrl": "https://dummyimage.com/931x785"
     },
@@ -33,7 +33,7 @@
       "content": "Quod reiciendis aspernatur ipsum cum debitis. Quis",
       "stock": 116,
       "quantity": 0,
-			"inventoryStatus": "OUTOFSTOCK",
+      "inventoryStatus": "OUTOFSTOCK",
       "imageUrl": "https://dummyimage.com/556x985"
     },
     {
@@ -45,7 +45,7 @@
       "content": "Occaecati dolore assumenda facilis error quaerat. ",
       "stock": 78,
       "quantity": 23,
-			"inventoryStatus": "INSTOCK",
+      "inventoryStatus": "INSTOCK",
       "imageUrl": "https://dummyimage.com/855x573"
     },
     {
@@ -57,7 +57,7 @@
       "content": "Autem blanditiis similique saepe excepturi at erro",
       "stock": 44,
       "quantity": 23,
-			"inventoryStatus": "INSTOCK",
+      "inventoryStatus": "INSTOCK",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFeI8yqtKfZMWg8_Zbf-RENKCV37eZ3AvUEQ&usqp=CAU"
     },
     {
@@ -69,7 +69,7 @@
       "content": "Quos accusamus distinctio voluptates ducimus neque",
       "stock": 34,
       "quantity": 23,
-			"inventoryStatus": "INSTOCK",
+      "inventoryStatus": "INSTOCK",
       "imageUrl": "https://dummyimage.com/400x350"
     },
     {
@@ -81,7 +81,7 @@
       "content": "Error voluptate recusandae reiciendis adipisci nec",
       "stock": 188,
       "quantity": 23,
-			"inventoryStatus": "INSTOCK",
+      "inventoryStatus": "INSTOCK",
       "imageUrl": "https://dummyimage.com/400x350"
     },
     {
@@ -93,7 +93,7 @@
       "content": "Tempora sed explicabo quae recusandae vitae debiti",
       "stock": 63,
       "quantity": 23,
-			"inventoryStatus": "INSTOCK",
+      "inventoryStatus": "INSTOCK",
       "imageUrl": "https://dummyimage.com/400x350"
     },
     {
@@ -105,7 +105,7 @@
       "content": "Id pariatur at modi esse distinctio error. Dolores",
       "stock": 116,
       "quantity": 23,
-			"inventoryStatus": "INSTOCK",
+      "inventoryStatus": "INSTOCK",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFeI8yqtKfZMWg8_Zbf-RENKCV37eZ3AvUEQ&usqp=CAU"
     },
     {
@@ -117,7 +117,7 @@
       "content": "Explicabo distinctio labore eius. Culpa provident ",
       "stock": 157,
       "quantity": 23,
-			"inventoryStatus": "INSTOCK",
+      "inventoryStatus": "INSTOCK",
       "imageUrl": "https://dummyimage.com/786x94"
     },
     {
@@ -129,7 +129,7 @@
       "content": "Reprehenderit iste quos amet. Natus consequatur in",
       "stock": 30,
       "quantity": 23,
-			"inventoryStatus": "INSTOCK",
+      "inventoryStatus": "INSTOCK",
       "imageUrl": "https://dummyimage.com/974x504"
     },
     {
@@ -141,7 +141,7 @@
       "content": "Nihil magni libero sapiente voluptate. Perspiciati",
       "stock": 11,
       "quantity": 23,
-			"inventoryStatus": "INSTOCK",
+      "inventoryStatus": "INSTOCK",
       "imageUrl": "https://dummyimage.com/400x350"
     },
     {
@@ -153,7 +153,7 @@
       "content": "Ut assumenda soluta esse officia. Quos quaerat sus",
       "stock": 78,
       "quantity": 23,
-			"inventoryStatus": "INSTOCK",
+      "inventoryStatus": "INSTOCK",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFeI8yqtKfZMWg8_Zbf-RENKCV37eZ3AvUEQ&usqp=CAU"
     },
     {
@@ -165,7 +165,7 @@
       "content": "Aut quam nisi libero distinctio. Temporibus rerum ",
       "stock": 103,
       "quantity": 23,
-			"inventoryStatus": "INSTOCK",
+      "inventoryStatus": "INSTOCK",
       "imageUrl": "https://dummyimage.com/686x327"
     },
     {
@@ -177,7 +177,7 @@
       "content": "Iste repudiandae nostrum ea iste voluptate ducimus",
       "stock": 77,
       "quantity": 23,
-			"inventoryStatus": "INSTOCK",
+      "inventoryStatus": "INSTOCK",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFeI8yqtKfZMWg8_Zbf-RENKCV37eZ3AvUEQ&usqp=CAU"
     },
     {
@@ -189,7 +189,7 @@
       "content": "Sint aperiam voluptatum laudantium laborum at debi",
       "stock": 126,
       "quantity": 23,
-			"inventoryStatus": "INSTOCK",
+      "inventoryStatus": "INSTOCK",
       "imageUrl": "https://dummyimage.com/400x350"
     },
     {
@@ -201,7 +201,7 @@
       "content": "Temporibus reiciendis inventore ratione asperiores",
       "stock": 21,
       "quantity": 23,
-			"inventoryStatus": "INSTOCK",
+      "inventoryStatus": "INSTOCK",
       "imageUrl": "https://dummyimage.com/698x680"
     },
     {
@@ -213,7 +213,7 @@
       "content": "In sequi cumque quisquam corrupti doloribus suscip",
       "stock": 118,
       "quantity": 23,
-			"inventoryStatus": "INSTOCK",
+      "inventoryStatus": "INSTOCK",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFeI8yqtKfZMWg8_Zbf-RENKCV37eZ3AvUEQ&usqp=CAU"
     },
     {
@@ -225,7 +225,7 @@
       "content": "Corrupti sint occaecati doloribus maiores. Exceptu",
       "stock": 30,
       "quantity": 23,
-			"inventoryStatus": "INSTOCK",
+      "inventoryStatus": "INSTOCK",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFeI8yqtKfZMWg8_Zbf-RENKCV37eZ3AvUEQ&usqp=CAU"
     },
     {
@@ -237,7 +237,7 @@
       "content": "Exercitationem debitis enim eum nemo necessitatibu",
       "stock": 112,
       "quantity": 23,
-			"inventoryStatus": "INSTOCK",
+      "inventoryStatus": "INSTOCK",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFeI8yqtKfZMWg8_Zbf-RENKCV37eZ3AvUEQ&usqp=CAU"
     },
     {
@@ -249,7 +249,7 @@
       "content": "A similique facilis facilis. Excepturi repudiandae",
       "stock": 68,
       "quantity": 23,
-			"inventoryStatus": "INSTOCK",
+      "inventoryStatus": "INSTOCK",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFeI8yqtKfZMWg8_Zbf-RENKCV37eZ3AvUEQ&usqp=CAU"
     },
     {
@@ -261,7 +261,7 @@
       "content": "Maiores eveniet dolores laudantium quae doloribus ",
       "stock": 53,
       "quantity": 23,
-			"inventoryStatus": "INSTOCK",
+      "inventoryStatus": "INSTOCK",
       "imageUrl": "https://dummyimage.com/400x350.png"
     },
     {
@@ -273,7 +273,7 @@
       "content": "Quas a at officia quod in quod. Impedit deserunt t",
       "stock": 199,
       "quantity": 23,
-			"inventoryStatus": "INSTOCK",
+      "inventoryStatus": "INSTOCK",
       "imageUrl": "https://dummyimage.com/572x213"
     },
     {
@@ -285,7 +285,7 @@
       "content": "Alias maiores soluta ab earum asperiores praesenti",
       "stock": 177,
       "quantity": 23,
-			"inventoryStatus": "INSTOCK",
+      "inventoryStatus": "INSTOCK",
       "imageUrl": "https://dummyimage.com/396x712"
     },
     {
@@ -297,8 +297,20 @@
       "content": "Assumenda debitis voluptatem magnam temporibus mol",
       "stock": 125,
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFeI8yqtKfZMWg8_Zbf-RENKCV37eZ3AvUEQ&usqp=CAU",
-			"quantity": 24,
-			"inventoryStatus": "INSTOCK"
+      "quantity": 24,
+      "inventoryStatus": "INSTOCK"
+    },
+    {
+      "id": 316
+    },
+    {
+      "id": 317
+    },
+    {
+      "id": 318
+    },
+    {
+      "id": 319
     }
   ],
   "categories": [
@@ -321,18 +333,16 @@
   ],
   "carts": [
     {
-      
-        "id": 227,
-        "name": "Nobis",
-        "price": 195,
-        "categoryId": 1,
-        "rate": 1.68,
-        "content": "Reprehenderit iste quos amet. Natus consequatur in",
-        "stock": 30,
-        "quantity": 23,
-        "inventoryStatus": "INSTOCK",
-        "imageUrl": "https://dummyimage.com/974x504"
-        
+      "id": 227,
+      "name": "Nobis",
+      "price": 195,
+      "categoryId": 1,
+      "rate": 1.68,
+      "content": "Reprehenderit iste quos amet. Natus consequatur in",
+      "stock": 30,
+      "quantity": 23,
+      "inventoryStatus": "INSTOCK",
+      "imageUrl": "https://dummyimage.com/974x504"
     },
     {
       "id": 315,
@@ -343,10 +353,9 @@
       "content": "Assumenda debitis voluptatem magnam temporibus mol",
       "stock": 125,
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFeI8yqtKfZMWg8_Zbf-RENKCV37eZ3AvUEQ&usqp=CAU",
-			"quantity": 24,
-			"inventoryStatus": "INSTOCK"
+      "quantity": 24,
+      "inventoryStatus": "INSTOCK"
     }
-    
   ],
   "users": [
     {

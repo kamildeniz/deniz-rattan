@@ -1,6 +1,8 @@
 import { Product } from "./product";
 
-export interface Cart extends Product{
-quantity:number;
+export class Cart {
+   
+    product?: Product;
+    quantity!: number;
 
 }

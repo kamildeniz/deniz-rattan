@@ -1,12 +1,12 @@
 <p-menubar [model]="items" >
     <ng-template pTemplate="start">
-        <img src="assets/showcase/images/primeng.svg" height="40" class="mr-2">
+        
         <input type="text" pInputText placeholder="Search">
     </ng-template>
   <ng-template pTemplate="end">
     <p-splitButton label="Normal" styleClass="p-button-text p-button-plain mr-2 mb-2" [model]="this.items2">
         <ng-template pTemplate="content">
-            <i class="pi pi-shopping-cart" pBadge value="{{carts.length}}"></i>
+           <a routerLink="carts" ><i class="pi pi-shopping-cart" pBadge value="{{carts.length}}"></i></a> 
             
             
         </ng-template>

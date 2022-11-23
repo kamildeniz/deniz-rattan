@@ -6,9 +6,9 @@ import { Category } from '../modals/category';
   providedIn: 'root'
 })
 export class CategoryService {
-  path=" /categories";
+  path=" http://localhost:3000/categories";
   constructor(private http:HttpClient) { }
-//'../../../../assets/data/categries.json'
+
   
   getCategories(){
     

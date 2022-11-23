@@ -6,6 +6,7 @@ import { Product } from 'src/app/modals/product';
 import { CategoryService } from 'src/app/services/category.service';
 import { ProductService } from 'src/app/services/product.service';
 import { ChangeDetectorRef } from '@angular/core';
+import { CartService } from 'src/app/services/cart.service';
 
 
 
@@ -23,7 +24,9 @@ export class ProductComponent implements OnInit {
   sortField: string = '';
 
   constructor(private productService: ProductService,
-    private categoryService: CategoryService, private cRef: ChangeDetectorRef) { }
+    private categoryService: CategoryService,
+    private cRef: ChangeDetectorRef,
+    private cartService: CartService) { }
 
 
   getCategory(id: number) {
@@ -42,6 +45,10 @@ export class ProductComponent implements OnInit {
     return category;
 
   }
+  addToCart(product: Product) {
+    this.cartService.addToCart(product)
+    console.log(this.cartService.list())
+  }
   ngOnInit(): void {
     this.productService
       .getProducts()
@@ -53,9 +60,9 @@ export class ProductComponent implements OnInit {
       .subscribe((categories) => {
         this.categories = categories;
       });
-      this.sortOptions = [
-        {label: 'Price High to Low', value: '!price'},
-        {label: 'Price Low to High', value: 'price'}
+    this.sortOptions = [
+      { label: 'Price High to Low', value: '!price' },
+      { label: 'Price Low to High', value: 'price' }
     ];
   }
   onSortChange(event: any) {
