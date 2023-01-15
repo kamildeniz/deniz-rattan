@@ -1,5 +1,5 @@
 export class Product{
-    id?:string;
+    id?:number;
     name?:string;
     content?:string;
     price?:number;
@@ -7,6 +7,6 @@ export class Product{
     rate?:number;
     quantity?:number;
     inventoryStatus?:string;
-    categoryId?:number;
+    categoryId?:string;
     imageUrl?:string;
 }

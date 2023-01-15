@@ -1,8 +1,7 @@
 import { Product } from "./product";
 
-export class Cart {
+export class Cart extends Product {
    
-    product?: Product;
-    quantity!: number;
+    
 
 }

@@ -7,6 +7,7 @@ import { CategoryService } from 'src/app/services/category.service';
 import { ProductService } from 'src/app/services/product.service';
 import { ChangeDetectorRef } from '@angular/core';
 import { CartService } from 'src/app/services/cart.service';
+import { NaviComponent } from '../navi/navi.component';
 
 
 
@@ -26,28 +27,13 @@ export class ProductComponent implements OnInit {
   constructor(private productService: ProductService,
     private categoryService: CategoryService,
     private cRef: ChangeDetectorRef,
-    private cartService: CartService) { }
+    private cartService: CartService,
+    private naviComponent:NaviComponent) { }
 
 
-  getCategory(id: number) {
-    let category
-    for (let index = 0; index < this.categories.length; index++) {
-
-      if (this.categories[index].id = id) {
-        category = this.categories[index].name;
-        break
-      }
-      else {
-        category = 'kategori yok'
-      }
-      this.cRef.detectChanges();
-    }
-    return category;
-
-  }
   addToCart(product: Product) {
     this.cartService.addToCart(product)
-    console.log(this.cartService.list())
+    this.naviComponent.carts.push(product);
   }
   ngOnInit(): void {
     this.productService

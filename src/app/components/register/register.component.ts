@@ -5,12 +5,12 @@ import { AccountService } from 'src/app/services/account.service';
 import { NaviComponent } from '../navi/navi.component';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css','./bootstrap.min.css']
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.css']
 })
-export class LoginComponent implements OnInit {
-model:User=new User();
+export class RegisterComponent implements OnInit {
+  model:User=new User();
   constructor(private accountService:AccountService,
     private naviComponenet :NaviComponent) { }
 

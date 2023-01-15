@@ -1,17 +1,29 @@
-<li class="nav-item dropdown" *ngIf="carts.length>0">
-    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-        aria-expanded="false">
-        Sepetiniz
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <li *ngFor="let item of carts"><a class="dropdown-item">{{item.product?.name}} 
-            <span class="badge bg-primary">{{item.quantity}}</span>
-            <span 
-         class="badge bg-danger">Sil</span>
-        </a></li>
-        <li>
-            <hr class="dropdown-divider">
-        </li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-    </ul>
-</li>
+<p-table [value]="carts" dataKey="name" [tableStyle]="{'min-width': '60rem'}">
+    <ng-template pTemplate="header">
+        <tr>
+            <th style="width: 5rem"></th>
+            <th pSortableColumn="name">Name <p-sortIcon field="name"></p-sortIcon></th>
+            <th>Image</th>
+            <th pSortableColumn="price">Price <p-sortIcon field="price"></p-sortIcon></th>
+            <th pSortableColumn="category">Category <p-sortIcon field="category"></p-sortIcon></th>
+            <th pSortableColumn="rating">Reviews <p-sortIcon field="rating"></p-sortIcon></th>
+            <th pSortableColumn="inventoryStatus">Status <p-sortIcon field="inventoryStatus"></p-sortIcon></th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-cart let-expanded="expanded">
+        <tr>
+            
+            <td>{{cart.name}}</td>
+            <td><img [src]="cart.imageUrl" [alt]="cart.name" width="100" class="shadow-4" /></td>
+            <td>{{cart.price | currency:'USD'}}</td>
+            <td>{{cart.category}}</td>
+            <td><p-rating [ngModel]="cart.rating" [readonly]="true" [cancel]="false"></p-rating></td>
+            <td><span [class]="'product-badge status-' + cart.inventoryStatus.toLowerCase()">{{cart.inventoryStatus}}</span></td>
+            <td>
+                <button pButton type="button"  label="" icon="pi pi-trash" class="p-button-danger" (click)="removeFromCart(cart)"></button>
+                
+                        </td>
+        </tr>
+    </ng-template>
+    
+</p-table>

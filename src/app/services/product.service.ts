@@ -21,6 +21,6 @@ export class ProductService {
         'Authorization':'Token'
       })
     }
-    return this.http.post<Product>(this.path, product,httpOptions)
+    return this.http.post<Product>(this.path, product)
   }
 }

@@ -9,7 +9,7 @@ import { ProductService } from 'src/app/services/product.service';
 @Component({
   selector: 'app-product-add',
   templateUrl: './product-add.component.html',
-  styleUrls: ['./product-add.component.css'],
+  styleUrls: ['./product-add.component.css','devam.css'],
   providers: [CategoryService, ProductService]
 })
 export class ProductAddComponent implements OnInit {
@@ -25,8 +25,9 @@ export class ProductAddComponent implements OnInit {
     });
   }
   add() {
-    this.productService.add(this.productAddForm?.value).subscribe(response => {
-      alert("Ürün eklendi");
+    this.productService.add(this.productAddForm.value).subscribe(response => {
+      alert(this.productAddForm?.value);
+      
     });
 
   }
