@@ -1,7 +1,7 @@
 <p-table [value]="carts" dataKey="name" [tableStyle]="{'min-width': '60rem'}">
     <ng-template pTemplate="header">
         <tr>
-            <th style="width: 5rem"></th>
+            <th style="width: 5rem">Quantity</th>
             <th pSortableColumn="name">Name <p-sortIcon field="name"></p-sortIcon></th>
             <th>Image</th>
             <th pSortableColumn="price">Price <p-sortIcon field="price"></p-sortIcon></th>
@@ -12,7 +12,7 @@
     </ng-template>
     <ng-template pTemplate="body" let-cart let-expanded="expanded">
         <tr>
-            
+            <td>{{cart.quantity}}</td>
             <td>{{cart.name}}</td>
             <td><img [src]="cart.imageUrl" [alt]="cart.name" width="100" class="shadow-4" /></td>
             <td>{{cart.price | currency:'USD'}}</td>

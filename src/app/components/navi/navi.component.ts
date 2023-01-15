@@ -11,17 +11,10 @@ import { CartService } from 'src/app/services/cart.service';
 })
 export class NaviComponent implements OnInit {
   carts: Cart[]|any;
+  items!: MenuItem[];
   constructor(private cartService: CartService,
     private accountService: AccountService) { }
-  items: MenuItem[] = [
-    { label: 'Anasayfa', icon: 'pi pi-fw pi-home', routerLink: 'products', },
-    { label: 'Kaydol', icon: 'pi pi-fw pi-calendar', routerLink: 'register', },
-    { label: 'Ekle', icon: 'pi pi-fw pi-pencil', routerLink: 'productadd' },
-
-    { label: 'Giriş', icon: 'pi pi-fw pi-file', routerLink: 'login', visible: this.isLoggedIn() == false },
-    { label: 'Çıkış', icon: 'pi pi-fw pi-file', routerLink: 'login', visible: (this.isLoggedIn() == true) },
-    { label: 'Deneme', icon: 'pi pi-fw pi-file', routerLink: 'login', visible: false },
-  ];
+    
   isLoggedIn() {
     return this.accountService.isloggedIn();
   }
@@ -30,6 +23,13 @@ export class NaviComponent implements OnInit {
   }
   ngOnInit() {
     this.getCart();
+    this.items = [
+      { label: 'Anasayfa', icon: 'pi pi-fw pi-home', routerLink: 'products', },
+      { label: 'Kaydol', icon: 'pi pi-fw pi-calendar', routerLink: 'register', },
+      { label: 'Ekle', icon: 'pi pi-fw pi-pencil', routerLink: 'productadd' },
+  
+      { label: 'Giriş', icon: 'pi pi-fw pi-file', routerLink: 'login', visible: this.isLoggedIn() == false }
+    ];
 
   }
   getCart() {

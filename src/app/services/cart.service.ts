@@ -19,18 +19,23 @@ cart!:Cart;
 
  
 
-  addToCart(product:Product){
+  addToCart(product:Product,quantity:number){
     this.list()
     .subscribe((cart) => {
+      
       this.carts.push(cart);
     });
     
      
      this.cart=product;
-     console.log(this.cart,"sepet")
-     console.log(this.http)   
+     this.cart.quantity=quantity;
+     if(this.cart.quantity==1){
      this.http.post<Cart>(this.path,this.cart).subscribe(data=>{this.cart.id=data.id })
-     
+    console.log(this.cart.quantity);
+    }
+     else{
+     this.http.put<Cart>(`${this.path}/${this.cart.id}`,this.cart).subscribe(data=>{this.cart.id=data.id })
+     }
 
   }
   removeFromCart(cart:Cart):Observable<Cart>{

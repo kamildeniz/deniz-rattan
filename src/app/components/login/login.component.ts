@@ -15,7 +15,7 @@ model:User=new User();
     private naviComponenet :NaviComponent) { }
 
   ngOnInit(): void {
-   
+this.naviComponenet.items.flatMap;
   }
   login(form:NgForm){
     if
@@ -24,7 +24,7 @@ model:User=new User();
     
     if( menu !== undefined)
     {
-      menu.visible = false;
+      menu.label="Çıkış"
     }
     console.log(this.naviComponenet.items);
   }

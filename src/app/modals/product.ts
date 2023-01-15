@@ -5,7 +5,6 @@ export class Product{
     price?:number;
     stock?:number;
     rate?:number;
-    quantity?:number;
     inventoryStatus?:string;
     categoryId?:string;
     imageUrl?:string;

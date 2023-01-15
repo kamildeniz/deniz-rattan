@@ -8,6 +8,7 @@ import { ProductService } from 'src/app/services/product.service';
 import { ChangeDetectorRef } from '@angular/core';
 import { CartService } from 'src/app/services/cart.service';
 import { NaviComponent } from '../navi/navi.component';
+import { Cart } from 'src/app/modals/cart';
 
 
 
@@ -18,6 +19,7 @@ import { NaviComponent } from '../navi/navi.component';
 })
 export class ProductComponent implements OnInit {
   products: Product[] = [];
+  cart?:Cart;
   sortOptions: SelectItem[] = [];
   categories: Category[] = [{ id: 0, name: "yok" }];
   sortOrder: number = 0;
@@ -29,11 +31,30 @@ export class ProductComponent implements OnInit {
     private cRef: ChangeDetectorRef,
     private cartService: CartService,
     private naviComponent:NaviComponent) { }
-
+    
 
   addToCart(product: Product) {
-    this.cartService.addToCart(product)
-    this.naviComponent.carts.push(product);
+     this.cart=this.naviComponent.carts.find((c:Cart)=>c.id==product.id);
+     console.log(this.cart?.quantity);
+     
+    if(this.cart==undefined){
+      this.naviComponent.carts.push(product)
+      this.cart=this.naviComponent.carts.find((c:Cart)=>c.id==product.id);
+      this.cart!.quantity=1;
+      console.log(this.cart!.quantity);
+      console.log("componentteki ifte");
+      
+    }
+    else{
+      console.log("componentteki else'te");
+      
+      this.naviComponent.carts.push(product);
+      this.cart!.quantity!+=1;
+      console.log(this.cart!.quantity);
+  }
+    
+    
+    this.cartService.addToCart(product,this.cart!.quantity!)
   }
   ngOnInit(): void {
     this.productService
